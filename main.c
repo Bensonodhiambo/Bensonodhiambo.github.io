@@ -3,7 +3,6 @@
 #define WIDTH 10
 #define HEIGHT 10
 
-// Define the maze using a grid
 char maze[HEIGHT][WIDTH] = {
     {'#', '#', '#', '#', '#', '#', '#', '#', '#', '#'},
     {'#', ' ', ' ', ' ', '#', ' ', ' ', ' ', ' ', '#'},
@@ -20,14 +19,13 @@ char maze[HEIGHT][WIDTH] = {
 void printMaze() {
     for (int i = 0; i < HEIGHT; i++) {
         for (int j = 0; j < WIDTH; j++) {
-            printf("%c ", maze[i][j]);
+            printf("%c", maze[i][j]);
         }
         printf("\n");
     }
 }
 
 int main() {
-    printf("2-D Maze:\n");
     printMaze();
     return 0;
 }
